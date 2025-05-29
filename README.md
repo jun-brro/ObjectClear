@@ -22,8 +22,8 @@
         <a href="https://zjx0101.github.io/projects/ObjectClear/" target='_blank'>
         <img src="https://img.shields.io/badge/🐳-Project%20Page-blue">
         </a>
-        <a href="#" target='_blank'>
-        <img src="https://img.shields.io/badge/arXiv-xxxx.xxxxx-b31b1b.svg">
+        <a href="https://arxiv.org/abs/2505.22636" target='_blank'>
+        <img src="https://img.shields.io/badge/arXiv-2505.22636-b31b1b.svg">
         </a>
         <img src="https://api.infinitescript.com/badgen/count?name=sczhou/ObjectClear&ltext=Visitors&color=3977dd">
     </h4>
@@ -63,7 +63,7 @@ OBER (OBject-Effect Removal) is a hybrid dataset designed to support research in
     @InProceedings{zhao2025ObjectClear,
         title     = {{ObjectClear}: Complete Object Removal via Object-Effect Attention},
         author    = {Zhao, Jixin and Zhou, Shangchen and Wang, Zhouxia and Yang, Peiqing and Loy, Chen Change},
-        booktitle = {arXiv preprint arXiv:xxxx.xxxxx},
+        booktitle = {arXiv preprint arXiv:2505.22636},
         year      = {2025}
         }
    ```
