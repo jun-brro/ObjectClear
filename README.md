@@ -29,7 +29,7 @@
     </h4>
 </div>
 
-<strong>ObjectDrop is an object removal model that can jointly eliminate the target object and its associated effects leveraging Object-Effect Attention, while preserving background consistency.</strong>
+<strong>ObjectClear is an object removal model that can jointly eliminate the target object and its associated effects leveraging Object-Effect Attention, while preserving background consistency.</strong>
 
 <div style="width: 100%; text-align: center; margin:auto;">
     <img style="width:100%" src="assets/teaser.jpg">
