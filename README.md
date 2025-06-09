@@ -43,6 +43,7 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 
 ## ⭐ Update
 - [2025.05] This repo is created.
+- [2025.06] 📢 📢 📢 Code and demo will be released by the end of this month. Please stay tuned! 🤗
 
 ## 📷 Dataset
 ![OBER_dataset_pipeline](assets/OBER_pipeline.png)
