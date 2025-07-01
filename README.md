@@ -25,6 +25,9 @@
         <a href="https://arxiv.org/abs/2505.22636" target='_blank'>
         <img src="https://img.shields.io/badge/arXiv-2505.22636-b31b1b.svg">
         </a>
+        <a href="https://huggingface.co/spaces/jixin0101/ObjectClear" target='_blank'>
+        <img src="https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-blue">
+        </a>
         <img src="https://api.infinitescript.com/badgen/count?name=sczhou/ObjectClear&ltext=Visitors&color=3977dd">
     </h4>
 </div>
@@ -42,7 +45,7 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 
 
 ## ⭐ Update
-- [2025.06] 📢 📢 📢 Code and demo will be released by the end of this month. Please stay tuned! 🤗
+- [2025.07] Release the Gradio demo.
 - [2025.05] This repo is created.
 
 
