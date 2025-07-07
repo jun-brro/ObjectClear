@@ -75,7 +75,7 @@ OBER (OBject-Effect Removal) is a hybrid dataset designed to support research in
     conda activate objectclear
 
     # install python dependencies
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     # [optional] install python dependencies for gradio demo
     pip3 install -r hugging_face/requirements.txt
     ```
