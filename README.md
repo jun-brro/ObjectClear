@@ -45,6 +45,7 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 
 
 ## ⭐ Update
+- [2025.07] We currently have no immediate plans to release the dataset, but may consider doing so after the paper is accepted.
 - [2025.07] Release the inference code and Gradio demo.
 - [2025.05] This repo is created.
 
