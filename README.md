@@ -43,11 +43,17 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 ---
 </div>
 
+### 🔔 Dataset Release Plan 
+**Thank you all for your interest in our dataset!** As the work is currently under review, we will not be releasing the datasets at this stage. We plan to make it publicly available once the paper is accepted. Please stay tuned for further updates! 🙂
 
 ## ⭐ Update
-- [2025.07] We currently have no immediate plans to release the dataset, but may consider doing so after the paper is accepted.
 - [2025.07] Release the inference code and Gradio demo.
 - [2025.05] This repo is created.
+
+### ✅ TODO
+- [ ] Release our datasets
+- [ ] Adapt to ComfyUI
+- [x] ~~Release the inference code and Gradio demo~~
 
 
 ## 🎃 Overview
@@ -130,6 +136,9 @@ If you find our repo useful for your research, please consider citing our paper:
     year      = {2025}
     }
 ```
+
+## 📝 License
+The ObjectClear is made available for use, reproduction, and distribution strictly for non-commercial purposes. The code, models, and datasets are licensed under <a rel="license" href="./LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.
 
 
 ## 📧 Contact
