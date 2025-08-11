@@ -1353,7 +1353,7 @@ class ObjectClearPipeline(
         height: Optional[int] = None,
         width: Optional[int] = None,
         padding_mask_crop: Optional[int] = None,
-        strength: float = 0.9999,
+        strength: float = 1.0,
         num_inference_steps: int = 50,
         timesteps: List[int] = None,
         sigmas: List[float] = None,
@@ -1915,6 +1915,17 @@ class ObjectClearPipeline(
                 # progressive attention mask blending
                 fuse_index = 5
                 if self.config.apply_attention_guided_fusion:
+                    if i == 0:
+                        init_latents_proper = image_latents
+                        init_mask = mask[0:1]
+
+                        noise_timestep = timesteps[i + 1]
+                        init_latents_proper = self.scheduler.add_noise(
+                            init_latents_proper, noise, torch.tensor([noise_timestep])
+                        )
+                        
+                        latents = (1 - init_mask) * init_latents_proper + init_mask * latents
+                        
                     if i == len(timesteps) - 1:
                         attn_key, attn_map = next(iter(self.cross_attention_scores.items()))
                         attn_map = self.resize_attn_map_divide2(attn_map, mask, fuse_index)

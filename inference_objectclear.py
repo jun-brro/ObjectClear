@@ -27,10 +27,10 @@ if __name__ == '__main__':
                     help='Random seed for torch.Generator. Default: 42')
     parser.add_argument('--steps', type=int, default=20, 
                         help='Number of diffusion inference steps. Default: 20')
-    parser.add_argument('--strength', type=float, default=0.99, 
-                        help='Strength of the denoising process. Default: 0.99')
     parser.add_argument('--guidance_scale', type=float, default=2.5, 
                         help='CFG guidance scale. Default: 2.5')
+    parser.add_argument('--no_agf', action='store_true', 
+                        help='Disable Attention Guided Fusion')
     args = parser.parse_args()
     
     
@@ -64,10 +64,11 @@ if __name__ == '__main__':
     torch_dtype = torch.float16 if args.use_fp16 else torch.float32
     variant = "fp16" if args.use_fp16 else None
     generator = torch.Generator(device=device).manual_seed(args.seed)
+    use_agf = not args.no_agf
     pipe = ObjectClearPipeline.from_pretrained_with_custom_modules(
         "jixin0101/ObjectClear",
         torch_dtype=torch_dtype,
-        apply_attention_guided_fusion=True,
+        apply_attention_guided_fusion=use_agf,
         cache_dir=args.cache_dir,
         variant=variant,
     )
@@ -97,7 +98,6 @@ if __name__ == '__main__':
             mask_image=mask,
             generator=generator,
             num_inference_steps=args.steps,
-            strength=args.strength,
             guidance_scale=args.guidance_scale,
             height=h,
             width=w,

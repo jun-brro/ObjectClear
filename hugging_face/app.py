@@ -285,7 +285,7 @@ pipe = ObjectClearPipeline.from_pretrained_with_custom_modules(
 
 pipe.to(device)
 
-def process(image_state, interactive_state, mask_dropdown, guidance_scale, seed, num_inference_steps, strength         
+def process(image_state, interactive_state, mask_dropdown, guidance_scale, seed, num_inference_steps         
             ):
     generator = torch.Generator(device="cuda").manual_seed(seed)
     image_np = image_state["origin_image"]
@@ -318,7 +318,6 @@ def process(image_state, interactive_state, mask_dropdown, guidance_scale, seed,
         mask_image=mask,
         generator=generator,
         num_inference_steps=num_inference_steps,
-        strength=strength,
         guidance_scale=guidance_scale,
         height=h,
         width=w,
@@ -531,13 +530,6 @@ with gr.Blocks(css=custom_css) as demo:
             )
             
             with gr.Accordion('ObjectClear Settings', open=True):
-                strength = gr.Radio(
-                    choices=[0.99, 1.0],
-                    value=0.99,
-                    label="Strength",
-                    info="0.99 better preserves the background and color; use 1.0 if object/shadow is not fully removed (default: 0.99)"
-                )
-                
                 guidance_scale = gr.Slider(
                     minimum=1, maximum=10, step=0.5, value=2.5,
                     label="Guidance Scale",
@@ -616,8 +608,7 @@ with gr.Blocks(css=custom_css) as demo:
             mask_dropdown,
             guidance_scale,
             seed,
-            num_inference_steps,
-            strength
+            num_inference_steps
         ],
         outputs=[
             output_image_component, output_compare_image_component
