@@ -46,6 +46,8 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 ### 🔔 Dataset Release Plan 
 **Thank you all for your interest in our dataset!** As the work is currently under review, we will not be releasing the datasets at this stage. We plan to make it publicly available once the paper is accepted. Please stay tuned for further updates! 🙂
 
+⚠️⚠️⚠️ Please note that the website [https://objectclear.com/](https://objectclear.com/) is not under our operation. It does not hold a license for our model yet has used our results and online demo without authorization. Please verify the legitimacy of any site to avoid financial loss.
+
 ## ⭐ Update
 - [2025.07] Release the inference code and Gradio demo.
 - [2025.05] This repo is created.
