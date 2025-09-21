@@ -47,12 +47,14 @@ For more visual results, go checkout our <a href="https://zjx0101.github.io/proj
 **Thank you all for your interest in our dataset!** As the work is currently under review, we will not be releasing the datasets at this stage. We plan to make it publicly available once the paper is accepted. Please stay tuned for further updates! 🙂
 
 ## ⭐ Update
+- [2025.09] We have released our [benchmark datasets](https://drive.google.com/drive/folders/12LA53ZPAG1uxdVXsn90L2qe6zCcp6aGF?usp=sharing) for evaluation, along with [our results](https://drive.google.com/drive/folders/1eUbIz5OS9yK6Ih8Y1qXoXuk_UWOcifcY?usp=sharing) to facilitate comparison.
 - [2025.07] Release the inference code and Gradio demo.
 - [2025.05] This repo is created.
 
 ### ✅ TODO
-- [ ] Release our datasets
+- [ ] Release our training datasets
 - [ ] Adapt to ComfyUI
+- [x] Release our benchmark datasets
 - [x] ~~Release the inference code and Gradio demo~~
 
 
