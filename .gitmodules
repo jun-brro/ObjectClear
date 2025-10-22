@@ -1,0 +1,9 @@
+[submodule "AnyDoor"]
+	path = AnyDoor
+	url = https://github.com/ali-vilab/AnyDoor
+[submodule "controlcom"]
+	path = controlcom
+	url = https://github.com/bcmi/ControlCom-Image-Composition
+[submodule "blended-latent-diffusion"]
+	path = blended-latent-diffusion
+	url = https://github.com/omriav/blended-latent-diffusion
